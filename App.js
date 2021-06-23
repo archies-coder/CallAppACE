@@ -26,8 +26,8 @@ const App = () => {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      {/* <TodaysLeads /> */}
-      <AddData />
+      <TodaysLeads />
+      {/* <AddData /> */}
     </SafeAreaView>
   );
 };
