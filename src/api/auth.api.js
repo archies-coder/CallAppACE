@@ -19,3 +19,11 @@ export async function loginAdmin(data) {
         console.log(error)
     }
 }
+
+export async function requestOTP(mobileNo) {
+    return await apiProvider.getSingle('otp', mobileNo)
+}
+
+export async function verifyOTP(mobileNo, otp) {
+    return await apiProvider.post('otp', )
+}

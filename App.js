@@ -14,6 +14,8 @@ import {
   Colors
 } from 'react-native/Libraries/NewAppScreen';
 import AddData from './src/pages/AddData';
+import OtpVerification from './src/pages/OtpVerification';
+import ReportsView from './src/pages/ReportsView';
 import TodaysLeads from './src/pages/TodaysLeads';
 
 
@@ -22,11 +24,14 @@ const App = () => {
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    flex: 1
   };
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <TodaysLeads />
+      {/* <TodaysLeads /> */}
+      {/* <ReportsView /> */}
+      <OtpVerification />
       {/* <AddData /> */}
     </SafeAreaView>
   );
